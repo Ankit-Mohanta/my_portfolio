@@ -116,11 +116,16 @@
             @media screen and (max-width: 900px) {
                 background-color: transparent;
             }
+            @media screen and (max-width: 750px) {
+                width: 170px;
+                height: 170px;
+            }
             .icon {
               :nth-child(1) {
                 width: 30px;
                 height: 30px;
                 color: var(--color-primary);
+                
               }
             }
             .text {

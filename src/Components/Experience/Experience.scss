@@ -1,3 +1,114 @@
 #service{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: 900px){
+        height: fit-content;
+    }
+    @media screen and (max-width: 750px){
+        margin-top: 500px;
+        height: fit-content;
+    }
+    .text{
+        flex: 1;
+        max-width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .skills{
+            color: var(--color-primary);
+        }
+        @media screen and (max-width: 900px){
+            flex: 0;
+        }
+        @media screen and (max-width: 750px){
+            display: none;
+        }
+    }
+    .container{
+        flex: 9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 900px){
+            flex: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .contain{
+            width: 80vw;
+            height: 75vh;
+            border: 1px solid var(--color-primary);
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            &:hover{
+                cursor: pointer;
+            }
+            @media screen and (max-width: 900px){
+                height: 30vh;
+                width: 90vw;
+                border: none;
+            }
+            @media screen and (max-width: 750px){
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                gap: 10px;
+            }
+            .line{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                @media screen and (max-width: 750px){
+                    display: flex;
+                    flex-direction: row;
+                }
+                .icon{
+                    width: 150px;
+                    height: 150px;
+                    border: 1px solid var(--color-primary);
+                    border-radius: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    &:hover{
+                        background-color: var(--color-primary-variant);
+                        border: none;
+                    }
+                    @media screen and (max-width: 750px){
+                        width: 150px;
+                        height: 150px;
+                    }
+                    .logo{
+                        :nth-child(1){
+                            width: 25px;
+                            height: 25px;
+                            color: var(--color-primary);
+                        }
+                    }
+                    .desc{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        .batch{
+                            color: var(--color-primary);
+                        }
+                        .name{
+                            color: var(--color-white);
+                        }
+                    }
+                    .level{
+                        color: var(--color-light)
+                    }
+                }
+            }
+        }
+    }
 }
