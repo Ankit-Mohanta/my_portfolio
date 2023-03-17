@@ -1,0 +1,169 @@
+#about {
+  height: 100vh;
+  width: 100%;
+  @media screen and (max-width: 900px) {
+    height: 70vh;
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .top {
+      flex: 1;
+      // background: yellow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-size: 35px;
+        font-weight: 500;
+        color: var(--color-primary);
+      }
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+    .bottom {
+      flex: 9;
+      display: flex;
+      // background: green;
+      @media screen and (max-width: 900px) {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+      }
+      @media screen and (max-width: 750px) {
+        margin-top: 25vh;
+      }
+      .bottom-left {
+        flex: 5.5;
+        // background-color: yellow;
+        object-fit: contain;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width: 900px) {
+            display: none;
+        }
+        .clone {
+          width: 500px;
+          height: 500px;
+          background-color: var(--color-primary);
+          border: none;
+          border-radius: 20%;
+          &:hover {
+            cursor: pointer;
+          }
+          img {
+            width: 500px;
+            height: 500px;
+            border: none;
+            border-radius: 20%;
+            rotate: 5deg;
+            &:hover {
+              rotate: 0deg;
+            }
+            transition: var(--transition);
+          }
+        }
+      }
+      .bottom-right {
+        flex: 4.5;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        @media screen and (max-width: 900px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10vh;
+        }
+        @media screen and (max-width: 750px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8vh;
+        }
+        .cards {
+          display: flex;
+          gap: 80px;
+          align-items: center;
+          justify-content: center;
+          @media screen and (max-width: 750px) {
+            display: flex;
+            gap: 2vh;
+            align-items: center;
+            justify-content: center;
+          }
+          .Section {
+            border: 2px solid var(--color-primary);
+            background-color: var(--color-primary-variant);
+            border-radius: 20px;
+            width: 180px;
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            &:hover {
+              background-color: transparent;
+            }
+            @media screen and (max-width: 900px) {
+                background-color: transparent;
+            }
+            .icon {
+              :nth-child(1) {
+                width: 30px;
+                height: 30px;
+                color: var(--color-primary);
+              }
+            }
+            .text {
+              font-size: 20px;
+            }
+            .time {
+              color: var(--color-light);
+            }
+          }
+        }
+        .about-me {
+          max-width: 600px; 
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          @media screen and (max-width: 750px){
+            width: 95vw;
+          } 
+        }
+        .buttom-section {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          a {
+            width: max-content;
+            display: inline-block;
+            color: var(--color-primary);
+            padding: 0.75rem 1.2rem;
+            border-radius: 0.4rem;
+            cursor: pointer;
+            border: 1px solid var(--color-primary);
+            transition: var(--transition);
+            background: transparent;
+            background: var(--color-primary);
+            color: var(--color-bg);
+            &:hover{
+                color: var(--color-primary);
+                background-color: var(--color-bg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

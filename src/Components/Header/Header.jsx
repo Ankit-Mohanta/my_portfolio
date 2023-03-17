@@ -13,9 +13,16 @@ function Header() {
     <div className='Header'>
         <div className="header">
             <div className="left">
-                <AiOutlineGithub/>
-                <AiOutlineLinkedin/>
-                <AiOutlineInstagram/>
+                <a href="https://github.com/Ankit-Mohanta" target="_blank" rel="noopener noreferrer">
+                    <AiOutlineGithub/>
+                </a>
+                <a href="https://www.linkedin.com/in/ankit-mohanta-b74364236/" target="_blank" rel="noopener noreferrer">
+                    <AiOutlineLinkedin/>
+                </a>
+                <a href="https://www.instagram.com/ankit_react_developer/" target="_blank" rel="noopener noreferrer">
+                    <AiOutlineInstagram/>
+                </a>
+                
             </div>
             <div className="middle">
                 <div className="middle-left">
@@ -35,7 +42,7 @@ function Header() {
                     </div>
                     <div className="button">
                         <a href={CV} download>Download CV</a>
-                        <button>Let's talk</button>
+                        <a href='#contact'>Let's talk</a>
                     </div>
                 </div>
             </div>
