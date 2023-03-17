@@ -22,10 +22,10 @@ function App() {
       <div className="experience">
         <Experience/>
       </div>
-      {/* <div className="projects">
+      <div className="projects">
         <Projects/>
       </div>
-      <div className="contact">
+      {/* <div className="contact">
         <Contact/>
       </div> */}
     </div>

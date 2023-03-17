@@ -30,7 +30,7 @@ function About() {
                     1 year of experience
                   </div>
                 </div>
-                <div className="Section">
+                <a className="Section" href='#projects'>
                 <div className="icon">
                     <VscFolderLibrary/>
                   </div>
@@ -40,7 +40,7 @@ function About() {
                   <div className="time">
                     5 projects
                   </div>
-                </div>
+                </a>
               </div>
               <div className="about-me">
               <p>

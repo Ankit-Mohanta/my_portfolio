@@ -1,3 +1,59 @@
 #projects{
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .project1{
+            background: var(--color-primary-variant);
+            width: 300px;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border: none;
+            border-radius: 20px;
+            .image{
+                width: 260px;
+                height: 160px;
+                background: blue;
+                border-radius: 20px;
+            }
+            .text{
+                color: var(--color-white);
+                font-weight: 500px;
+            }
+            .buttons{
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                .Git{
+                    padding: 10px;
+                    background: transparent;
+                    border: 1px solid var(--color-primary);
+                    border-radius: 10px;
+                    color: var(--color-primary);
+                    cursor: pointer;
+                }
+                .site{
+                    padding: 10px;
+                    background: var(--color-primary);
+                    border: 1px solid var(--color-primary);
+                    border-radius: 10px;
+                    color: var(--color-bg-variant);
+                    &:hover{
+                        cursor: pointer;
+                        color: var(--color-primary);
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
 }
